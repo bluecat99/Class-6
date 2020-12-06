@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mail Signature</title>
+</head>
+
+<body>
+    <table style="width: 500px; font-size: 10pt; font-family:Lucida Console, monospace;" cellpadding="0" cellspacing="0"
+        border="0" class="ng-scope">
+        <tbody>
+            <tr>
+                <td width="200" align="center"
+                    style="font-size: 10pt; font-family: Lucida Console, monospace; width: 200px; text-align:center; vertical-align: top;"
+                    valign="top" rowspan="6">
+
+                    <p>
+                        <!-- ngIf: showField('photo') --><img ng-if="showField('photo')"
+                            ng-src="https://raw.githubusercontent.com/bluecat99/E-mail-Signature/main/Screenshot_2.png"
+                            alt="photograph" width="87" border="0" style="border:0; height:auto; width:87px; border-radius: 50%; "
+                            class="ng-scope"
+                            src="https://raw.githubusercontent.com/bluecat99/E-mail-Signature/main/Screenshot_2.png">
+                        <!-- end ngIf: showField('photo') -->
+                    </p>
+
+                    <!-- ngIf: showField('bannerURL') --><a ng-if="showField('bannerURL')"
+                        href="https://www.codetwo.com/email-signatures/" target="_blank" class="ng-scope"><img
+                            border="0" alt="Badge" width="74" style="width:74px; height:auto; border:0;" ng-src=""
+                            src="https://codetwocdn.azureedge.net/images/mail-signatures/generator-dm/best-service-badge/banner.png"></a>
+                    <!-- end ngIf: showField('bannerURL') -->
+                    <!-- ngIf: !showField('bannerURL') -->
+
+                    <!-- ngIf: showField('company') -->
+                    <p ng-if="showField('company')" style="margin-top:20px" class="ng-scope">
+                        <a href="http://www.my-company.com" target="_blank" rel="noopener"
+                            style="text-decoration:none;"><strong
+                                style="font-size: 10pt; font-family: Lucida Console, monospace; color: #331616;"
+                                class="ng-binding">www.my-company.com</strong></a>
+
+                    </p><!-- end ngIf: showField('company') -->
+                </td>
+
+                <td width="20" style="width:20px">&nbsp;</td>
+
+                <td>
+                    <table cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td style="font-size: 10pt; color:#0079ac; font-family: Lucida Console, monospace; width: 305px; padding-bottom: 15px; vertical-align: top; line-height:1.2;"
+                                    valign="top">
+                                    <strong><span
+                                            style="font-size: 14pt; font-family: Lucida Console, monospace; color:#2985cc;"
+                                            class="ng-binding"><b> Rakibul Islam Rumman</b><br></span></strong>
+                                    <!-- ngIf: showField('title') --><em ng-if="showField('title')"
+                                        style="font-family: Lucida Console, monospace; font-size:12pt; color:#632020;"
+                                        class="ng-binding ng-scope"><b>Web Designer</b></em>
+                                    <!-- end ngIf: showField('title') -->
+                                    <!-- ngIf: showField('company') --><span ng-if="showField('company')"
+                                        style="font-family: Lucida Console, monospace; font-size:9pt; color:#331616;"
+                                        class="ng-binding ng-scope"><br><b>blue CAT</b></span>
+                                    <!-- end ngIf: showField('company') -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border-top:2px solid #3eaf3e; font-size: 9pt; color:#444444; font-family: Lucida Console, monospace; padding-top: 15px; vertical-align: top; line-height:1.2"
+                                    valign="top">
+                                    <!-- ngIf: showField('mobile') --><span ng-if="showField('mobile')"
+                                        class="ng-scope"><span style="color: #4c8fe6;">M: </span><span
+                                            style="font-size: 9pt; font-family: Lucida Console, monospace; color:#331616;"
+                                            class="ng-binding"> +8801 79680 2699<br></span></span>
+                                    <!-- end ngIf: showField('mobile') -->
+                                    <!-- ngIf: showField('phone') --><span ng-if="showField('phone')"
+                                        class="ng-scope"><span style="color: #5c1066;">P: </span><span
+                                            style="font-size: 9pt; font-family: Lucida Console, monospace; color:#331616;"
+                                            class="ng-binding"> +8801 xxxx xxxx<br></span></span>
+                                    <!-- end ngIf: showField('phone') -->
+                                    <!-- ngIf: showField('email') --><span ng-if="showField('email')"
+                                        class="ng-scope"><span style="color: #727725;">E: </span><span
+                                            style="font-size: 9pt; font-family: Lucida Console, monospace; color:#331616;"
+                                            class="ng-binding"> contactrakib99@gmail.com</span></span>
+                                    <!-- end ngIf: showField('email') -->
+                                </td>
+                            </tr>
+                            <!-- ngIf: isAnyFieldEntered('address1, address2') -->
+                            <tr ng-if="isAnyFieldEntered('address1, address2')" class="ng-scope">
+                                <td style="font-size: 9pt; font-family: Lucida Console, monospace; padding-bottom: 5px; padding-top: 5px; vertical-align: top; color: #0079ac;"
+                                    valign="top">
+                                    <!-- ngIf: showField('address1') --><span ng-if="showField('address1')"
+                                        style="font-size: 9pt; font-family: Lucida Console, monospace; color: #2985cc;"
+                                        class="ng-binding ng-scope">Pirganj, Rangpur
+                                        <!-- ngIf: showField('address2') --><span ng-if="showField('address2')"
+                                            class="ng-scope"><br></span><!-- end ngIf: showField('address2') --></span>
+                                    <!-- end ngIf: showField('address1') -->
+                                    <!-- ngIf: showField('address2') --><span ng-if="showField('address2')"
+                                        style="font-size: 9pt; font-family: Lucida Console, monospace; color: #2985cc;"
+                                        class="ng-binding ng-scope">5470, Bangladesh</span>
+                                    <!-- end ngIf: showField('address2') -->
+                                </td>
+                            </tr><!-- end ngIf: isAnyFieldEntered('address1, address2') -->
+                            <tr>
+                                <td style="font-size: 10pt; font-family: Lucida Console, monospace; padding-bottom: 5px; padding-top: 5px; padding-left: 10px; vertical-align: top; color: #0079ac;"
+                                    valign="top">
+
+                                </td>
+                            </tr>
+                            <!-- ngIf: isAnyFieldEntered('facebookURL, twitterURL, youtubeURL, linkedinURL, instagramURL, pinterestURL') -->
+                            <tr ng-if="isAnyFieldEntered('facebookURL, twitterURL, youtubeURL, linkedinURL, instagramURL, pinterestURL')"
+                                class="ng-scope">
+                                <td style="font-size: 10pt; font-family: Lucida Console, monospace; padding-bottom: 5px; padding-top: 5px; vertical-align: top;"
+                                    valign="top">
+                                    <!-- ngIf: showField('facebookURL') --><span ng-if="showField('facebookURL')"
+                                        class="ng-scope"><a href="https://www.facebook.com/rakibislam.islam.50596"
+                                            target="_blank" rel="noopener"><img border="0" width="15"
+                                                ng-src="https://codetwocdn.azureedge.net/images/mail-signatures/generator-dm/best-service-badge/fb.png"
+                                                alt="facebook icon" style="border:0; height:15px; width:15px"
+                                                src="https://codetwocdn.azureedge.net/images/mail-signatures/generator-dm/best-service-badge/fb.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                    <!-- end ngIf: showField('facebookURL') -->
+                                    <!-- ngIf: showField('twitterURL') --><span ng-if="showField('twitterURL')"
+                                        class="ng-scope"><a href="https://twitter.com/rakibul_rumman" target="_blank"
+                                            rel="noopener"><img border="0" width="15"
+                                                ng-src="https://codetwocdn.azureedge.net/images/mail-signatures/generator-dm/best-service-badge/tt.png"
+                                                alt="twitter icon" style="border:0; height:15px; width:15px"
+                                                src="https://codetwocdn.azureedge.net/images/mail-signatures/generator-dm/best-service-badge/tt.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                    <!-- end ngIf: showField('twitterURL') -->
+                                    <!-- ngIf: showField('youtubeURL') -->
+                                    <!-- ngIf: showField('linkedinURL') --><span ng-if="showField('linkedinURL')"
+                                        class="ng-scope"><a
+                                            href="https://www.linkedin.com/in/md-rakibul-islam-rumman-2a2437201/"
+                                            target="_blank" rel="noopener"><img border="0" width="15"
+                                                ng-src="https://codetwocdn.azureedge.net/images/mail-signatures/generator-dm/best-service-badge/ln.png"
+                                                alt="linkedin icon" style="border:0; height:15px; width:15px"
+                                                src="https://codetwocdn.azureedge.net/images/mail-signatures/generator-dm/best-service-badge/ln.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                    <!-- end ngIf: showField('linkedinURL') -->
+                                    <!-- ngIf: showField('instagramURL') --><span ng-if="showField('instagramURL')"
+                                        class="ng-scope"><a href="https://www.instagram.com/rakibul_islam_rumman"
+                                            target="_blank" rel="noopener"><img border="0" width="15"
+                                                ng-src="https://codetwocdn.azureedge.net/images/mail-signatures/generator-dm/best-service-badge/it.png"
+                                                alt="instagram icon" style="border:0; height:15px; width:15px"
+                                                src="https://codetwocdn.azureedge.net/images/mail-signatures/generator-dm/best-service-badge/it.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                    <!-- end ngIf: showField('instagramURL') -->
+                                    <!-- ngIf: showField('pinterestURL') -->
+                                </td>
+                            </tr>
+                            <!-- end ngIf: isAnyFieldEntered('facebookURL, twitterURL, youtubeURL, linkedinURL, instagramURL, pinterestURL') -->
+
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
